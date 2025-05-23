@@ -1,0 +1,35 @@
+{
+    "mcpServers": {
+        "edgeone-pages-mcp-server": {
+            "command": "npx",
+            "args": [
+                "edgeone-pages-mcp"
+            ]
+        },
+        "amap-maps": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@amap/amap-maps-mcp-server"
+            ],
+            "env": {
+                "AMAP_MAPS_API_KEY": "api_key"
+            }
+        },
+        "blender": {
+            "command": "uvx",
+            "args": [
+                "blender-mcp"
+            ]
+        },
+        "Puppeteer": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-puppeteer"
+            ],
+            "env": {},
+            "fromGalleryId": "modelcontextprotocol.servers_puppeteer"
+        }
+    }
+}
